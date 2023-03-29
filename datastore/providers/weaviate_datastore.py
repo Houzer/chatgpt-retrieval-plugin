@@ -109,7 +109,7 @@ class WeaviateDataStore(DataStore):
     def __init__(self):
         auth_credentials = self._build_auth_credentials()
 
-        url = f"{WEAVIATE_HOST}:{WEAVIATE_PORT}"
+        url = f"{WEAVIATE_HOST}"
 
         logger.debug(
             f"Connecting to weaviate instance at {url} with credential type {type(auth_credentials).__name__}"
